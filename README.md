@@ -1,6 +1,6 @@
 # DSA-Practice
 
-> Playlist followed is >> [link](https://tinyurl.com/y3s8ww4a)
+> Playlist followed is  [Algorithms](https://tinyurl.com/y3s8ww4a) for  by ***Abdul Bari***
 
 - [x] Lecture 1-10
 - [ ] Lecture 11-20
