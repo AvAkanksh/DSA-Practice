@@ -5,8 +5,8 @@
 - [x] Lecture 1-10
 - [x] Lecture 11-20
 - [x] Lecture 21-30
-- [ ] Lecture 31-40
-- [ ] Lecture 41-50
+- [x] Lecture 31-40
+- [x] Lecture 41-50
 - [ ] Lecture 51-60
 - [ ] Lecture 61-70
 - [ ] Lecture 71-80
