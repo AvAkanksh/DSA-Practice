@@ -1,1 +1,1 @@
-maxPieces(n-a,a,b,c),maxPieces(n-b,a,b,c),maxPieces(n-c,a,b,c)
+ o1.b+o2.b
