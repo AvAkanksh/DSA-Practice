@@ -24,5 +24,6 @@ int main()
     vector<int> vec = {1,2,3,4,5,6,6,6,6,7,6,76,6,5,4,3,2,1,2,2,1,1};
     cout<<maxLenEO(vec)<<endl;
 
+
     return 0;
 }
