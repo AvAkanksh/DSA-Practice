@@ -4,7 +4,7 @@
 using namespace std;
 
 void display(vector<int> vec){
-    for(int i = 0 ; i < vec.size(); i++){
+    for(int i = 0 ; i < int(vec.size()); i++){
         cout<<vec[i]<<"\t";
     }
     cout<<""<<endl;
