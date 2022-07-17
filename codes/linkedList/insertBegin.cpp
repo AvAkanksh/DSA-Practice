@@ -1,9 +1,7 @@
-#include<iostream>
-#include<algorithm>
-#include<vector>
-using namespace std;
+#include <iostream>
+#include <vector>
 
-// Title of the Program
+using namespace std;
 
 struct Node{
     int data;
@@ -20,23 +18,23 @@ Node *insertBegin(Node *head,int x){
     return temp;
 }
 
-void printList(Node *head){
+void traversal(Node *head){
     while(head!=NULL){
-        cout<<head->data<<" ";
-        head = head->next;
+        cout<<head->data<<endl;
+        head=head->next;
     }
 }
 
-int main(){
+int main()
+{
+    Node *head = NULL;
+    
+    head = insertBegin(head,40);
+    head = insertBegin(head,30);
+    head = insertBegin(head,20);
+    head = insertBegin(head,10);
 
-Node *head = NULL;
-head = insertBegin(head,30);
-head = insertBegin(head,20);
-head = insertBegin(head,10);
-head = insertBegin(head,0);
+    traversal(head);
 
-printList(head);
-
-
-return 0 ;
+    return 0;
 }
