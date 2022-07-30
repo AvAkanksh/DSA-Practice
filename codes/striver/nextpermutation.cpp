@@ -4,7 +4,7 @@
 using namespace std;
 
 void display(vector<int> vec){
-    for(int i = 0 ; i < vec.size(); i++){
+    for(int i = 0 ; i < int(vec.size()); i++){
         cout<<vec[i]<<"\t";
     }
     cout<<""<<endl;
@@ -17,10 +17,10 @@ void swap(vector<int> &vec, int i , int j){
 }
 
 void allPermutations(vector<int> vec , int start){
-    if(start==vec.size()){
+    if(start==int(vec.size())){
         display(vec);
     }
-    for(int i = start ; i < vec.size(); i++){
+    for(int i = start ; i < int(vec.size()); i++){
         swap(vec,i,start);
         allPermutations(vec, start+1);
         swap(vec,i,start);
