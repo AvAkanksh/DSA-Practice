@@ -13,7 +13,7 @@ struct Node{
 };
 
 struct Queue{
-    Node *front, *rear ;
+    Node *front, *rear ;ww
     int size;
     Queue(){
         front = NULL;
