@@ -41,7 +41,7 @@ void quickSort(int arr[], int l, int h)
 int kthSmallestNumber(int arr[],int l,int h,int k){
     int p;
     while(l<h){
-        int p = partition(arr,l,h);
+        p = partition(arr,l,h);
         if(k==p){
             return arr[p];
         }
