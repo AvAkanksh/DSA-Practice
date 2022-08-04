@@ -124,6 +124,24 @@ int balancedBT(Node *root){
     }
 }
 
+int maxWidth(Node *root){
+    if(root == NULL){return 0;}
+    queue<Node*> q;
+    q.push(root);
+    int ans = 0;
+    while(!(q.empty())){
+        int count = q.size();
+        ans = max(ans,count);
+        for(int i = 0 ; i< count; i++){
+            Node *curr = q.front();
+            q.pop();
+            if(curr->left != NULL){q.push(curr->left);}
+            if(curr->right != NULL){q.push(curr->right);}
+        }
+    }
+    return ans;
+}
+
 int main()
 {
     Node *root = new Node(10);
@@ -161,13 +179,15 @@ int main()
 
     // cout<<"The give Tree is having children sum property or not ? "<<childrenSum(root)<<endl;
 
-    if(balancedBT(root)!=-1){
-        cout<<"The given Binary Tree is Balanced !"<<endl;
-    }
-    else{
-        cout<<"The given Binary Tree is NOT Balanced !"<<endl;
+    // if(balancedBT(root)!=-1){
+    //     cout<<"The given Binary Tree is Balanced !"<<endl;
+    // }
+    // else{
+    //     cout<<"The given Binary Tree is NOT Balanced !"<<endl;
 
-    }
+    // }
+
+    cout<<"Maximum Width of the Binary Tree is : "<<maxWidth(root)<<endl;
 
     return 0;
 }
