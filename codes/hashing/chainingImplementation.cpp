@@ -1,46 +1,42 @@
-#include <iostream>
-#include <vector>
-#include <list>
+// #include <iostream>
+// #include <vector>
+// #include <list>
 
-using namespace std;
+// using namespace std;
 
 // struct MyHash{
-//     int BUCKET;-
+//     int BUCKET;
 //     list<int> *table;
 //     MyHash(int b){
 //         BUCKET = b;
 //         table = new list<int>[b];
 //     }
 
-//     void insert(int key){
-//         int i = key%BUCKET;
-//         table[i].push_back(key);
-//     }
-
-//     void search(){
-//         cout<<"HI"<<endl;
-//     }
-
-//     void remove(int key){
-//         int i = key%BUCKET;
-//         table[i].remove(key);
-//     }
-
 // };
+
+
+// int main()
+// {
+
+
+//     return 0;
+// }
+
+#include <bits/stdc++.h>
+using namespace std;
 
 int main()
 {
-    int x= 10;
-    cout<<x<<endl;
-    cout<<&x<<endl;
-    int &y = x ;
-    cout<<*(&y)<<endl;
-    int a = 10;
-    cout<<a<<endl;
-    cout<<float(a)<<endl;
-    float b = 10.1;
-    cout<<b<<endl;
-    cout<<int(b)<<endl;
+    // Create a set of strings
+    set<string> st;
+    st.insert({ "geeksb", "for", "geeks", "org" });
+
+    // 'it' evaluates to iterator to set of string
+    // type automatically
+    
+    for(auto it = st.begin(); it != st.end(); it++){
+        cout<<*it<<endl;
+    }
 
     return 0;
 }
