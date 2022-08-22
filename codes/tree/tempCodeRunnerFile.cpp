@@ -1,2 +1,2 @@
 
-    display(preorder)
+    cout<<"-------------"<<endl;
